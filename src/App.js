@@ -38,22 +38,22 @@ class App extends Component {
       return (
         <div className="col-md-4" key={i}>
           <div className="card mt-4">
-            <div className="card-title text-center">
+            <div className="card-title text-center" title="Id">
               <h3>{todo.Id}</h3>
-              <span className="badge badge-pill badge-primary ml-2">
+              <span className="badge badge-pill badge-primary ml-2" title="DataAction">
                 {todo.DataAction}
               </span>
-              <span className="badge badge-pill badge-success ml-2">
+              <span className="badge badge-pill badge-success ml-2" title="NumberOrden">
                 {todo.NumberOrder}
               </span>
-              <span className="badge badge-pill badge-dark ml-2">
+              <span className="badge badge-pill badge-dark ml-2" title="Active">
                 {todo.Active}
               </span>
             </div>
-            <div className="card-body">
-              {todo.ImageUrl}
+            <div className="card-body" title="ImageUrl">
+              {todo.ImageUrl} 
             </div>
-            <div className="card-footer">
+            <div className="card-footer" >
               <button
                 className="btn btn-danger"
                 onClick={this.removeTodo.bind(this, i)}>
